@@ -92,3 +92,16 @@ CREATE TABLE tasks (
 2025-06-19 21:16:28,725 - sqlalchemy.engine.Engine - INFO - ROLLBACK
 2025-06-19 21:16:28,725 - app.main - INFO - Task Manager API started successfully on 0.0.0.0:8000
 2025-06-19 21:21:24,425 - app.main - INFO - Shutting down Task Manager API...
+2025-06-19 22:38:51,165 - app.main - INFO - Starting Task Manager API...
+2025-06-19 22:38:51,170 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-06-19 22:38:51,171 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-06-19 22:38:51,171 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-06-19 22:38:51,172 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-06-19 22:38:51,172 - app.core.database - INFO - Database tables created successfully
+2025-06-19 22:38:51,172 - app.main - INFO - Database initialized successfully
+2025-06-19 22:38:51,173 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-06-19 22:38:51,174 - sqlalchemy.engine.Engine - INFO - SELECT 1
+2025-06-19 22:38:51,174 - sqlalchemy.engine.Engine - INFO - [generated in 0.00022s] ()
+2025-06-19 22:38:51,174 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-06-19 22:38:51,175 - app.main - INFO - Task Manager API started successfully on 0.0.0.0:8000
+2025-06-19 22:41:07,873 - app.main - INFO - Shutting down Task Manager API...
