@@ -1,0 +1,94 @@
+2025-06-19 15:02:07,797 - app.main - INFO - Starting Task Manager API...
+2025-06-19 15:02:07,804 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-06-19 15:02:07,804 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-06-19 15:02:07,805 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-06-19 15:02:07,806 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("tasks")
+2025-06-19 15:02:07,806 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-06-19 15:02:07,806 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE tasks (
+	id VARCHAR(36) NOT NULL, 
+	title VARCHAR(255) NOT NULL, 
+	description TEXT, 
+	completed BOOLEAN NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2025-06-19 15:02:07,807 - sqlalchemy.engine.Engine - INFO - [no key 0.00014s] ()
+2025-06-19 15:02:07,809 - sqlalchemy.engine.Engine - INFO - CREATE INDEX ix_tasks_title ON tasks (title)
+2025-06-19 15:02:07,809 - sqlalchemy.engine.Engine - INFO - [no key 0.00019s] ()
+2025-06-19 15:02:07,810 - sqlalchemy.engine.Engine - INFO - CREATE INDEX ix_tasks_id ON tasks (id)
+2025-06-19 15:02:07,811 - sqlalchemy.engine.Engine - INFO - [no key 0.00026s] ()
+2025-06-19 15:02:07,813 - sqlalchemy.engine.Engine - INFO - CREATE INDEX ix_tasks_completed ON tasks (completed)
+2025-06-19 15:02:07,813 - sqlalchemy.engine.Engine - INFO - [no key 0.00028s] ()
+2025-06-19 15:02:07,814 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-06-19 15:02:07,814 - app.core.database - INFO - Database tables created successfully
+2025-06-19 15:02:07,814 - app.main - INFO - Database initialized successfully
+2025-06-19 15:02:07,815 - app.core.database - ERROR - Database health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-06-19 15:02:07,815 - app.main - ERROR - Database health check failed
+2025-06-19 15:02:13,282 - app.main - INFO - Starting Task Manager API...
+2025-06-19 15:02:13,283 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-06-19 15:02:13,283 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-06-19 15:02:13,283 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-06-19 15:02:13,285 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-06-19 15:02:13,285 - app.core.database - INFO - Database tables created successfully
+2025-06-19 15:02:13,285 - app.main - INFO - Database initialized successfully
+2025-06-19 15:02:13,286 - app.core.database - ERROR - Database health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-06-19 15:02:13,286 - app.main - ERROR - Database health check failed
+2025-06-19 15:05:14,763 - app.main - INFO - Starting Task Manager API...
+2025-06-19 15:05:14,765 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-06-19 15:05:14,766 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-06-19 15:05:14,766 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-06-19 15:05:14,767 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-06-19 15:05:14,767 - app.core.database - INFO - Database tables created successfully
+2025-06-19 15:05:14,767 - app.main - INFO - Database initialized successfully
+2025-06-19 15:05:14,767 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-06-19 15:05:14,768 - sqlalchemy.engine.Engine - INFO - SELECT 1
+2025-06-19 15:05:14,768 - sqlalchemy.engine.Engine - INFO - [generated in 0.00023s] ()
+2025-06-19 15:05:14,768 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-06-19 15:05:14,769 - app.main - INFO - Task Manager API started successfully on 0.0.0.0:8000
+2025-06-19 15:05:16,386 - app.main - INFO - Shutting down Task Manager API...
+2025-06-19 15:05:22,291 - app.main - INFO - Starting Task Manager API...
+2025-06-19 15:05:22,292 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-06-19 15:05:22,292 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-06-19 15:05:22,292 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-06-19 15:05:22,293 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-06-19 15:05:22,293 - app.core.database - INFO - Database tables created successfully
+2025-06-19 15:05:22,293 - app.main - INFO - Database initialized successfully
+2025-06-19 15:05:22,294 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-06-19 15:05:22,294 - sqlalchemy.engine.Engine - INFO - SELECT 1
+2025-06-19 15:05:22,294 - sqlalchemy.engine.Engine - INFO - [generated in 0.00020s] ()
+2025-06-19 15:05:22,294 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-06-19 15:05:22,295 - app.main - INFO - Task Manager API started successfully on 0.0.0.0:8000
+2025-06-19 15:05:34,078 - app.main - ERROR - HTTP exception: 404 - Not Found
+2025-06-19 15:07:41,487 - app.main - ERROR - HTTP exception: 404 - Not Found
+2025-06-19 15:07:44,021 - app.main - ERROR - HTTP exception: 404 - Not Found
+2025-06-19 15:15:30,605 - app.main - INFO - Shutting down Task Manager API...
+2025-06-19 16:53:08,130 - app.main - INFO - Starting Task Manager API...
+2025-06-19 16:53:08,138 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-06-19 16:53:08,139 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-06-19 16:53:08,139 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-06-19 16:53:08,143 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-06-19 16:53:08,144 - app.core.database - INFO - Database tables created successfully
+2025-06-19 16:53:08,144 - app.main - INFO - Database initialized successfully
+2025-06-19 16:53:08,145 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-06-19 16:53:08,145 - sqlalchemy.engine.Engine - INFO - SELECT 1
+2025-06-19 16:53:08,146 - sqlalchemy.engine.Engine - INFO - [generated in 0.00019s] ()
+2025-06-19 16:53:08,146 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-06-19 16:53:08,147 - app.main - INFO - Task Manager API started successfully on 0.0.0.0:8000
+2025-06-19 21:16:21,459 - app.main - INFO - Shutting down Task Manager API...
+2025-06-19 21:16:28,709 - app.main - INFO - Starting Task Manager API...
+2025-06-19 21:16:28,719 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-06-19 21:16:28,719 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-06-19 21:16:28,720 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-06-19 21:16:28,722 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-06-19 21:16:28,722 - app.core.database - INFO - Database tables created successfully
+2025-06-19 21:16:28,722 - app.main - INFO - Database initialized successfully
+2025-06-19 21:16:28,723 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-06-19 21:16:28,724 - sqlalchemy.engine.Engine - INFO - SELECT 1
+2025-06-19 21:16:28,724 - sqlalchemy.engine.Engine - INFO - [generated in 0.00025s] ()
+2025-06-19 21:16:28,725 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-06-19 21:16:28,725 - app.main - INFO - Task Manager API started successfully on 0.0.0.0:8000
+2025-06-19 21:21:24,425 - app.main - INFO - Shutting down Task Manager API...
